@@ -142,4 +142,3 @@ persist.camera.num_cameras=2
 
 ro.telephony.ril_class=LgeRIL
 persist.sys.usb.config=mtp,adb
-qemu.hw.mainkeys=0
