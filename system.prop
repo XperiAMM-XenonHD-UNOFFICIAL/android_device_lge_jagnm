@@ -138,4 +138,3 @@ ro.min_freq_0=787200
 persist.camera.num_cameras=2
 
 ro.telephony.ril_class=LgeRIL
-persist.sys.usb.config=mtp,adb

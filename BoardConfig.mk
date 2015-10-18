@@ -23,6 +23,9 @@
 
 TARGET_SPECIFIC_HEADER_PATH += device/lge/jagnm/include
 
+#Ota assert devices 
+TARGET_OTA_ASSERT_DEVICE := jagnm,jagn
+
 # Platform
 TARGET_NO_BOOTLOADER := true
 
