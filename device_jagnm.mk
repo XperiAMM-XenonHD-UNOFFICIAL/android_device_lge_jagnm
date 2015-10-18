@@ -22,8 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/lge/jagnm/overlay
 
-#PRODUCT_LOCALES := en_US
-#PRODUCT_LOCALES += mdpi
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
