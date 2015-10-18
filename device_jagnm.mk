@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
     copybit.msm8226 \
     memtrack.msm8226
 
+# Density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=280
 
