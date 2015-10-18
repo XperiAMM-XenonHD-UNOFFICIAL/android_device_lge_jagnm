@@ -1,6 +1,5 @@
 /*
- * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2011 - 2015 The MaxiCM Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +17,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "G3S"
+#define BTM_DEF_LOCAL_NAME   "LGE D722P"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 #endif
