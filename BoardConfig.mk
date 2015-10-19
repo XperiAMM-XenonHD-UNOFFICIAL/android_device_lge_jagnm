@@ -89,9 +89,6 @@ BOARD_HARDWARE_CLASS := device/lge/jagnm/cmhw/
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Webview prebuilt
-PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
-
 # Nfc
 BOARD_NFC_CHIPSET := pn547
 
