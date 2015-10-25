@@ -26,6 +26,7 @@ ro.telephony.default_network=10
 #
 persist.cne.feature=1
 
+
 # Skip /sys/power/wait_for_fb_* nodes and
 # force FB to be always on
 debug.sf.fb_always_on=1
@@ -43,6 +44,7 @@ ro.hdmi.enable=true
 qcom.hw.aac.encoder=true
 
 #system props for the MM modules
+
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
@@ -81,8 +83,8 @@ ro.opengles.version=196608
 
 #
 # System props for telephony
+# System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=1
-ro.telephony.ril_class=LgeRIL
 
 #System property to turn on hfp client
 bluetooth.hfp.client=1
@@ -91,6 +93,7 @@ bluetooth.hfp.client=1
 #
 persist.fuse_sdcard=true
 
+#
 #snapdragon value add features
 #
 ro.qc.sdk.audio.ssr=false
@@ -124,9 +127,14 @@ use.voice.path.for.pcm.voip=true
 #enable dsp gapless mode by default
 audio.offload.gapless.enabled=true
 
+#property to set minimum frequency as 787Mhz by default
+ro.min_freq_0=787200
+
 #property to restrict number of cameras to 2
 #In L AOSP MAX camera defined as 4, compared to 2 in KK
 #Due to that and multimode architecture, camera on 8x26 target
 #will not work properly on KK as there are non-zero specific profile
 #exists in dtsi file, which is needed fo JB camera.
 persist.camera.num_cameras=2
+
+ro.telephony.ril_class=LgeRIL
