@@ -103,7 +103,6 @@ write_int(const char *path, int value)
     return write_string(path, buffer);
 }
 
-
 static int
 is_lit(struct light_state_t const* state)
 {
@@ -117,7 +116,6 @@ rgb_to_brightness(const struct light_state_t *state)
     return ((77*((color>>16)&0x00ff))
             + (150*((color>>8)&0x00ff)) + (29*(color&0x00ff))) >> 8;
 }
-
 
 static int
 set_light_backlight(struct light_device_t* dev,
@@ -188,7 +186,6 @@ set_light_locked(struct light_device_t *dev, struct light_state_t *state)
     }
     return err;
 }
-
 
 static int
 handle_light_locked(struct light_device_t *dev)
@@ -262,7 +259,6 @@ close_lights(struct light_device_t *dev)
     return 0;
 }
 
-
 /******************************************************************************/
 static int open_lights(const struct hw_module_t* module, char const* name,
         struct hw_device_t** device)
@@ -301,7 +297,6 @@ static int open_lights(const struct hw_module_t* module, char const* name,
     *device = (struct hw_device_t*)dev;
     return 0;
 }
-
 
 static struct hw_module_methods_t lights_module_methods = {
     .open =  open_lights,
