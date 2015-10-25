@@ -134,7 +134,6 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 # SELinux
 BOARD_SEPOLICY_UNION += \
     bootanim.te \
-    device.te \
     file.te \
     file_contexts \
     genfs_contexts \
