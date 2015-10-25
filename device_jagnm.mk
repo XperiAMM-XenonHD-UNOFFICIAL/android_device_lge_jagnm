@@ -97,7 +97,6 @@ PRODUCT_COPY_FILES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    Torch \
     libxml2 \
     com.android.future.usb.accessory
 
