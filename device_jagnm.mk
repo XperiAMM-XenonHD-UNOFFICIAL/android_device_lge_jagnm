@@ -186,3 +186,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SELinux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.selinux=permissive
+
+# Root && USB
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    persist.sys.usb.config=mtp,adb
