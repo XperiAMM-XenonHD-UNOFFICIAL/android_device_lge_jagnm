@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdivxdrmdecrypt \
     libmm-omxcore \
+    libextmedia_jni \
     libOmxCore \
     libstagefrighthw \
     libOmxVdec \
@@ -116,7 +117,11 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
     libdashplayer \
-    qcmediaplayer
+    libOmxVidcCommon \
+    libqcmediaplayer
+
+PRODUCT_BOOT_JARS += \
++   qcmediaplayer
 
 # Permissions
 PRODUCT_COPY_FILES += \
