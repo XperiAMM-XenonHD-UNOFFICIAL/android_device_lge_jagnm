@@ -86,7 +86,8 @@ PRODUCT_PACKAGES += \
     com.cyanogenmod.keyhandler
 
 # Lights
-TARGET_PROVIDES_LIBLIGHT := true
+PRODUCT_PACKAGES += \
+    lights.msm8226
 
 # Media codecs
 PRODUCT_COPY_FILES += \
