@@ -183,10 +183,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
 
-# SELinux
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.selinux=permissive
-
 # Root && USB
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
