@@ -25,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
  
-import init.msm8226.usb.rc
+import init.jagnm.usb.rc
 on init
     mkdir /mnt/shell/emulated 0700 shell shell
     mkdir /storage/emulated 0555 root root
@@ -205,10 +205,10 @@ on fs
     mkdir /dev/bus/usb 0755 root root
 
     # mount fs
-    mount_all fstab.msm8226
+    mount_all fstab.jagnm
 
     # activate zram
-    swapon_all fstab.msm8226
+    swapon_all fstab.jagnm
     write /proc/sys/vm/page-cluster 0
 
     # Keeping following partitions outside fstab file. As user may not have
@@ -274,6 +274,16 @@ on post-fs-data
     chown system system /sys/devices/platform/msm_sdcc.2/polling
     chown system system /sys/devices/platform/msm_sdcc.3/polling
     chown system system /sys/devices/platform/msm_sdcc.4/polling
+
+    # Leds
+    chown system system /sys/class/leds/red/blink
+    chmod 0666 /sys/class/leds/red/blink
+    chown system system /sys/class/leds/red/brightness
+    chmod 0666 /sys/class/leds/red/brightness
+    chmod system system /sys/class/leds/red/ramp_step_ms
+    chmod 0666 /sys/class/leds/red/ramp_step_ms
+    chmod system system /sys/class/leds/red/duty_pcts
+    chmod 0666 /sys/class/leds/red/duty_pcts
 
     # Allow Torch app use torch
     chown system system /sys/class/leds/led:flash_torch/brightness
