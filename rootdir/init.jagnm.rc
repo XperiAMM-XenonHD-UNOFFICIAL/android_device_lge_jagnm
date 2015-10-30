@@ -307,6 +307,7 @@ on post-fs-data
     mkdir /data/misc/location 0770 gps gps
     mkdir /data/misc/location/mq 0770 gps gps
     mkdir /data/misc/location/xtwifi 0770 gps gps
+    mkdir /data/misc/location/gpsone_d 0770 system gps
 
     #Create directory for hostapd
     mkdir /data/hostapd 0770 system wifi
