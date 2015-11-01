@@ -177,7 +177,8 @@ PRODUCT_PACKAGES += \
     regulatory.bin \
     p2p_supplicant_overlay.conf \
     wpa_supplicant_overlay.conf \
-    libwpa_client
+    libwpa_client \
+    hwaddrs
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
