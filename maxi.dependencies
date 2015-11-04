@@ -3,7 +3,7 @@
     "remote":      "maxicm",
     "repository": "android_kernel_lge_jagnm",
     "target_path": "kernel/lge/jagnm",
-    "branch": "bt"
+    "branch": "maxi-5.1"
   },
   {
     "remote":      "maxicm",
