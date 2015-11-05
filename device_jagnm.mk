@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     com.android.future.usb.accessory
 
-# Usb persist
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
-
 # NFC packages
 PRODUCT_PACKAGES += \
     NfcNci \
