@@ -1,8 +1,8 @@
 [
   {
     "remote":      "maxicm",
-    "repository": "android_kernel_lge_jagnm",
-    "target_path": "kernel/lge/jagnm",
+    "repository": "android_kernel_lge_msm8226",
+    "target_path": "kernel/lge/msm8226",
     "branch": "maxi-5.1"
   },
   {
