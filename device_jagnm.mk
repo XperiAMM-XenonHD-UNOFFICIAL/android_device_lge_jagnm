@@ -174,6 +174,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
 
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.image-dex2oat-filter=speed \
+    dalvik.vm.dex2oat-filter=interpret-only \
+    dalvik.vm.dex2oat-flags=--no-watch-dog
+
 # Root && USB
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
