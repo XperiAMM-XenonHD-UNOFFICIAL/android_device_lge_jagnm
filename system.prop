@@ -112,6 +112,9 @@ use.voice.path.for.pcm.voip=true
 #enable dsp gapless mode by default
 audio.offload.gapless.enabled=true
 
+#OTA
+ro.ota.manifest=http://maxicm.com/jagnm/ota.xml
+
 #property to set minimum frequency as 787Mhz by default
 ro.min_freq_0=787200
 
