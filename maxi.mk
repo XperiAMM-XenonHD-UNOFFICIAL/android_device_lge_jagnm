@@ -1,6 +1,6 @@
 # Boot animation
-TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common MaxiCM stuff.
 $(call inherit-product, vendor/maxi/config/common_full_phone.mk)
