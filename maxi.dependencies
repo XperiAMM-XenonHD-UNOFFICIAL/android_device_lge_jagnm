@@ -23,4 +23,8 @@
     "target_path": "hardware/qcom/fm",
     "branch": "maxi-5.1"
   },
+  {
+    "repository": "android_external_stlport",
+    "target_path": "external/stlport"
+  }
 ]

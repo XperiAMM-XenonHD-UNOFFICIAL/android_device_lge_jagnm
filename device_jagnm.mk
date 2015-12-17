@@ -121,7 +121,11 @@ PRODUCT_PACKAGES += \
     libqcmediaplayer
 
 PRODUCT_BOOT_JARS += \
-+   qcmediaplayer
+    qcmediaplayer
+
+# Libstlport
+RODUCT_PACKAGES += \
+    libstlport
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -157,7 +161,6 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     power.msm8226
-
 
 # Wifi
 PRODUCT_PACKAGES += \
