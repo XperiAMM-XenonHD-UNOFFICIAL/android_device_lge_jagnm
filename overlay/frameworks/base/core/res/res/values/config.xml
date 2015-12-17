@@ -296,11 +296,21 @@
     <!-- When config_perf_profile_prop is defined, this value MUST be the index of
          one of the listes values in frameworks/base/core/res/res/values/cm_arrays.xml
          for "perf_profile_values" array. Leave it blank if the device do not support
-         performance profiles  -->
-    <string name="config_perf_profile_default_entry" translatable="false">1</string>
+         performance profiles
+    <string name="config_perf_profile_default_entry" translatable="false">1</string>  -->
     
     <!-- Fast charge path -->
     <string name="config_fast_charge_path">/sys/kernel/fast_charge/force_fast_charge</string>
 
-    
+    <!-- Ambient Display : Dream of Notifications -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <bool name="config_dozeAfterScreenOff">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+
+    <!-- Screen brightness when dozing -->
+    <integer name="config_screenBrightnessDoze">10</integer>
+
+    <!-- Enable doze powersaving mode -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
 </resources>
