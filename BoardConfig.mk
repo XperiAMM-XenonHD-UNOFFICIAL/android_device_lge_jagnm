@@ -84,6 +84,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # Hardware tunables framework
 BOARD_HARDWARE_CLASS := device/lge/jagnm/cmhw/
 
+# GPS
+TARGET_NO_RPC := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 

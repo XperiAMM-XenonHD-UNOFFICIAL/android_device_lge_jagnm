@@ -116,3 +116,7 @@ ro.ota.manifest=http://maxicm.com/jagnm/ota.xml
 
 # Property to restrict number of cameras to 2
 persist.camera.num_cameras=2
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
