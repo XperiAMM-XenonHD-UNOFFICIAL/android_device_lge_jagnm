@@ -116,3 +116,26 @@ ro.ota.manifest=http://maxicm.com/jagnm/ota.xml
 
 # Property to restrict number of cameras to 2
 persist.camera.num_cameras=2
+
+# MaxiTweaks 5.1
+# Performance
+debug.performance.tuning=1
+
+# Launcher saved in memory
+ro.HOME_APP_ADJ=1
+
+# Render UI with GPU
+debug.sf.hw=1
+
+# Better scroll
+windowsmgr.max_events_per_sec=500
+
+# Better Scroll N2
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+
+# Better Touch
+debug.performance.tuning=1
+video.accelerate.hw=1
+
+# End of MaxiTweaks 5.1
