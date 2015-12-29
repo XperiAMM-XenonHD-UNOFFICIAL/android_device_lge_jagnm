@@ -127,13 +127,6 @@ ro.HOME_APP_ADJ=1
 # Render UI with GPU
 debug.sf.hw=1
 
-# Better scroll
-windowsmgr.max_events_per_sec=500
-
-# Better Scroll N2
-ro.max.fling_velocity=12000
-ro.min.fling_velocity=8000
-
 # Better Touch
 debug.performance.tuning=1
 video.accelerate.hw=1
