@@ -153,6 +153,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.msm8226
 
+# Snap Camera
+PRODUCT_PACKAGES += \
+    Snap
 
 # Wifi
 PRODUCT_PACKAGES += \
