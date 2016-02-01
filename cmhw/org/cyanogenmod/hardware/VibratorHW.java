@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2016 The MaxiCM Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,17 +16,28 @@
 
 package org.cyanogenmod.hardware;
 
-import org.cyanogenmod.hardware.util.FileUtils;
-
 import java.io.File;
+import java.util.Scanner;
+import org.cyanogenmod.hardware.util.FileUtils;
 
 public class VibratorHW {
 
-    private static String AMP_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
+    private static String TSPDRV_NFORCE_PATH = "/sys/devices/platform/tspdrv/nforce_timed";
+    private static String QPNP_NFORCE_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
+    private static int control_type;
 
     public static boolean isSupported() {
-        File file = new File(AMP_PATH);
-        return file.exists();
+        File t = new File(TSPDRV_NFORCE_PATH);
+        File q = new File(QPNP_NFORCE_PATH);
+        if (t.exists()) {
+                control_type = 1;
+                return true;
+        } else if (q.exists()) {
+                control_type = 2;
+                return true;
+        } else {
+                return false;
+        }		
     }
 
     public static int getMaxIntensity()  {
@@ -39,12 +50,20 @@ public class VibratorHW {
         return -1;
     }
     public static int getCurIntensity()  {
-        return Integer.parseInt(FileUtils.readOneLine(AMP_PATH));
+        if (control_type == 1) {
+                return Integer.parseInt(FileUtils.readOneLine(TSPDRV_NFORCE_PATH));
+        } else {
+                return Integer.parseInt(FileUtils.readOneLine(QPNP_NFORCE_PATH));
+        }
     }
     public static int getDefaultIntensity()  {
         return 28;
     }
     public static boolean setIntensity(int intensity)  {
-        return FileUtils.writeLine(AMP_PATH, String.valueOf(intensity));
+        if (control_type == 1) {
+                return FileUtils.writeLine(TSPDRV_NFORCE_PATH, String.valueOf(intensity));
+        } else {
+                return FileUtils.writeLine(QPNP_NFORCE_PATH, String.valueOf(intensity));
+        }
     }
 }
