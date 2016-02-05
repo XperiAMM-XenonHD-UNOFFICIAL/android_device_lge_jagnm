@@ -46,6 +46,7 @@ on init
 
     # NFC fix
     symlink /dev/pn547 /dev/pn544
+    symlink /dev/pn547 /dev/pn54x
 
     # We use our own ril-daemon service definition, see mmi-ril-daemon
     stop ril-daemon
@@ -95,6 +96,8 @@ on boot
     chmod 2770 /dev/socket/qmux_bluetooth
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
+    mkdir /dev/socket/qmux_nfc 0770 nfc nfc
+    chmod 2770 /dev/socket/qmux_nfc
 
 
     # Bluetooth
@@ -369,7 +372,7 @@ service bt-sap /system/bin/sapd 15
 service qmuxd /system/bin/qmuxd
     class main
     user radio
-    group radio audio bluetooth gps qcom_diag
+    group radio audio bluetooth gps qcom_diag nfc
 
 service netmgrd /system/bin/netmgrd
     class main
