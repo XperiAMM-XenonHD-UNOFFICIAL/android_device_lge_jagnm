@@ -12,6 +12,9 @@ DEVICE_PROVISIONED=1
 # Start in cdma mode
 ro.telephony.default_network=10
 
+#Call Vol
+ro.config.vc_call_vol_steps=6
+
 # Skip /sys/power/wait_for_fb_* nodes and
 # force FB to be always on
 debug.sf.fb_always_on=1
