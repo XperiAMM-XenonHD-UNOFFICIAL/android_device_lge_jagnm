@@ -65,10 +65,10 @@ BOARD_USES_LEGACY_MMAP := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
-#BOARD_CHARGER_SHOW_PERCENTAGE := true
+BOARD_CHARGER_SHOW_PERCENTAGE := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
-#BOARD_HEALTHD_CUSTOM_CHARGER := device/lge/jagnm/charger/healthd_mode_charger.cpp
-#BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/lge/jagnm/charger/images
+BOARD_HEALTHD_CUSTOM_CHARGER := device/lge/jagnm/charger/healthd_mode_charger.cpp
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/lge/jagnm/charger/images
 COMMON_GLOBAL_CFLAGS += \
     -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
     -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
