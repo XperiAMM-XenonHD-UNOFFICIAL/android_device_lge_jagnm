@@ -86,9 +86,6 @@ BOARD_HARDWARE_CLASS := device/lge/jagnm/cmhw/
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Optimization
-KRAIT_TUNINGS := true
-
 # Nfc
 BOARD_NFC_CHIPSET := pn547
 BOARD_NFC_DEVICE := "/dev/pn547"
