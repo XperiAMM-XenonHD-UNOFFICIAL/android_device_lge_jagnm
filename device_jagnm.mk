@@ -58,6 +58,11 @@ PRODUCT_PACKAGES += \
     arec \
     alsaucm_test
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
+
 # FM radio
 PRODUCT_PACKAGES += \
     qcom.fmradio \
