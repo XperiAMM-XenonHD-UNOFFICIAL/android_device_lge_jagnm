@@ -1,7 +1,10 @@
-# Inherit some common MaxiCM stuff.
+# Inherit some common Bliss stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/lge/jagnm/device_jagnm.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/bliss/config/nfc_enhanced.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
