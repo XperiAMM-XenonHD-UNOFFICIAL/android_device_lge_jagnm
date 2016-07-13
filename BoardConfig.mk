@@ -59,7 +59,7 @@ BOARD_PERSISTIMAGE_PARTITION_SIZE  := 33554432
 
 # bliss config
 TARGET_TC_ROM := 4.9-linaro
-TARGET_TC_KERNEL := 4.9-linaro
+TARGET_TC_KERNEL := 5.1-cortexa7
 BLISSIFY := true
 BLISS_O3 := true
 BLISS_STRICT := true
